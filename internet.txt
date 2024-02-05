@@ -1,0 +1,4 @@
+The internet is a global network of computers connected to each other which communicate through a standardized set of protocols. With the internet, it is 
+possible to access almost any information, communicatewith anyone in the world, learn and do so much more.
+The internet is a global network of physical cables which includes wires, cables and wireless signals like Wi-Fi, radio waves. A computer sends requests 
+over these wires to the server. A server is where websites are stored, Once thee request arrives, it retrieves the website and sends the correct data back to the computer.

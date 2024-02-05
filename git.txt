@@ -1,0 +1,66 @@
+Git is a Distributed Version Control Systemwhich is originally developed in 2005 by Linus Torvalds (Creator of Linux) and is open source i.e. freely available to use. It is the most popular and most used version control tool right now.
+
+Version control systems: Are a category of software tools that help a software team manage changes to source code over time. Version control software keeps track of every modification to the code in a special kind of database. If a mistake is made, 
+developers can turn back the clock using rollback or revert and compare earlier versions of the code to help fix the mistake while minimizing disruption to all team members.
+
+CONCEPTS YOU NEED TO KNOW TO USE GIT.
+Repositories
+
+Repositories are the primary building block of Git. A repository is a folder in your computer with different types of files and their “last modified” dates.
+
+In repos, all versions of the content are stored in the repo, that is, every time a file is modified and then saved. The repo is where the content is stored, called the working directory.
+
+
+Branching
+
+A series of changes create a new version; the pointer to that version is called a branch. Branches allow developers in different physical locations to contribute to the same codebase without affecting each other’s work. And if the changes are not conflicting, they can be added together and create a new version of the repo.
+
+In Git, a branch consists of an ordered list of changes known as the changeset. These changes are sorted as they are applied to the current version of the files.  
+
+Git commands
+
+
+Merging
+
+After a developer finishes working on one of the branches, they can add these changes to the main branch using merge operations. Merging takes the contents of two branches and merges them into one.
+
+Based on the type of changes done and the content of the branches, there are three types of merges:
+
+Fast forward merge: If the main branch was not touched since the second branch was created, Git adds the second branch updates to the main. Since there are no other changes in the main branch, this type is called a fast-forward branch because it moves the main branch forward to the state of the second branch.
+
+No-conflict merges: If both branches have changed. Still, these changes are independent and don’t conflict; Git automatically applies all changes to the main branch.
+
+Conflicting merge: If the changes in the two branches conflict, Git leaves the results. In this case, the user has to either solve the conflict or abort the merge.
+Git checks for conflict by trying to find the locations in content where a change has occurred; if the two branches have changes in the same location, and these changes are dependent, Git will stop and raise a conflict flag. But, if the changes are independent, Git will perform a fast-forward merge.
+
+Summary of Git Commands and Uses
+
+git init - Initialises a Git repository in that directory
+
+git add . - Adds all changes to the staging area to be committed
+
+git add file_name - Adds changes to the specified file to the staging area to be committed
+
+git commit - Commits staged changes and allows you to write a commit message
+
+git checkout -b branch_name - Creates and switches to a new branch
+
+git checkout branch_name-  Switches to the specified branch
+
+git merge branch_name - Merges the branch you are on into the specified branch
+
+git log - Outputs a log of past commits with their commit messages
+
+git status - Outputs status, including what branch you are on and what changes are staged
+
+git diff - Outputs the differences between the working directory and most recent commit
+
+
+git clone URL - Makes a clone of the repository at the specified URL
+
+git remote add origin URL - Links a local repository and an online repository at the specified URL
+
+git push origin branch_name - Pushes local changes to the specified branch of the online repository
+
+git pull origin branch_name - Pull changes from the online repository into local repository
+
